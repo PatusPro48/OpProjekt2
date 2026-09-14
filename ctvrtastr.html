@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-sm bg-light">
+    <ul class="nav-item">
+      <a class="nav-link" href="imdex.html">domovská stránka</a>
+    </ul>
+    <ul class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">to nejlepší</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="nejLeto.html">nejlepší místa - léto</a></li>
+        <li><a class="dropdown-item" href="tretistr.html">nejlepší místa - zima</a></li>
+      </ul>
+    </ul>
+    <ul class="nav-item">
+      <a class="nav-link" href="patastr.html">když do města</a>
+    </ul>
+    <ul class="nav-item">
+      <a class="nav-link" href="ctvrtastr.html">co s sebou</a>
+    </ul>
+    <ul class="nav-item">
+      <a class="nav-link" href="druhastr.html">galerie týmu NatureSpotCZ</a>
+    </ul>
+  </nav>
+<div class="container my-4 flex-grow-1">
+
+  <h1 class="text-center mb-4">Co s sebou do přírody</h1>
+  <p class="text-center mb-5">
+    Přehled základní výbavy pro výlety do přírody — od pohodových procházek až po divočejší dobrodružství.
+  </p>
+  <div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Základní výbava</h5>
+          <ul class="list-unstyled">
+            <li>Batoh</li>
+            <li>Dostatek vody</li>
+            <li>Jídlo / svačina</li>
+            <li>Mobil + powerbanka</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Oblečení</h5>
+          <ul class="list-unstyled">
+            <li>Turistické boty</li>
+            <li>Nepromokavá bunda</li>
+            <li>Vrstvené oblečení</li>
+            <li>Náhradní ponožky</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Bezpečnost</h5>
+          <ul class="list-unstyled">
+            <li>Mapa / offline navigace</li>
+            <li>Lékárnička</li>
+            <li>Svítilna</li>
+            <li>Informovat někoho o trase</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<h2 class="text-center mt-5 mb-3">Přehled výbavy podle náročnosti</h2>
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered text-center">
+      <thead class="table-dark">
+        <tr>
+          <th>Věc</th>
+          <th>Lehký výlet</th>
+          <th>Střední náročnost</th>
+          <th>Divočina / hory</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Voda</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Jídlo</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Lékárnička</td>
+          <td>❌</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Mapa / navigace</td>
+          <td>❌</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Nepromokavé oblečení</td>
+          <td>❌</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i><i class="fa-solid fa-check"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+    <footer class="bg-dark text-light text-center p-3 mt-auto">
+  © 2026 NatureSpotCZ
+</footer>
+</body>
+</html>

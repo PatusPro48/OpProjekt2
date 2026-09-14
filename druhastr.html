@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/lux/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+  body {
+    background-color: aquamarine;
+  }
+  .full-carousel-img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  /* aby to nezačínalo pod navbar */
+  body {
+    margin: 0;
+  }
+</style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-sm bg-light">
+    <ul class="nav-item">
+      <a class="nav-link" href="imdex.html">domovská stránka</a>
+    </ul>
+    <ul class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">to nejlepší</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="nejLeto.html">nejlepší místa - léto</a></li>
+        <li><a class="dropdown-item" href="tretistr.html">nejlepší místa - zima</a></li>
+      </ul>
+    </ul>
+    <ul class="nav-item">
+      <a class="nav-link" href="patastr.html">když do města</a>
+    </ul>
+    <ul class="nav-item">
+      <a class="nav-link" href="ctvrtastr.html">co s sebou</a>
+    </ul>
+    <ul class="nav-item">
+      <a class="nav-link" href="druhastr.html">galerie týmu NatureSpotCZ</a>
+    </ul>
+  </nav>
+
+    <div id="natureCarousel" class="carousel slide mx-auto container my-4 flex-grow-1" style="max-width:1280px; width:100%;">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="3"></button>
+  </div>
+
+  <div class="carousel-inner rounded overflow-hidden">
+
+    <div class="carousel-item active">
+      <img src="obrázky/obr4.jpg" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Hory">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="text-white">zaplavený strom po zvednutí hladiny jezera</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="obrázky/obr3.jpg" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Jezero">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="text-white">západ slunce nad obřím jezerem</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="obrázky/obr2.jpg" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Les">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="text-white">liduprázdné rakouské horské jezero</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="obrázky/obr1.jpg" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Vodopád">
+      <div class="carousel-caption text-secondary">
+        <h5 class="text-white">řeka mezi majestátními horami Kanady</h5>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#natureCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#natureCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+</div>
+    <footer class="bg-dark text-light text-center p-3 mt-auto">
+  © 2026 NatureSpotCZ
+</footer>
+</body>
+</html>
