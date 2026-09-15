@@ -1,93 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootswatch/dist/pulse/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-      .nav-link {
-        color: white;
-      }
-
-      .nav-link:hover {
-            background-color: white;
-            color: primary;
-            border-radius: 10px;
-            padding: 10px;
-        }
-    </style>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/pulse/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-  <nav class="navbar navbar-expand-sm bg-primary">
-      <ul class="nav-item">
-        <a class="nav-link" href="index.html">domovská stránka</a>
-      </ul>
-      <ul class="nav-item">
-        <a class="nav-link" href="kontakt.html">kontakt</a>
-      </ul>
-      <ul class="nav-item">
-        <a class="nav-link" href="karty.html">karty</a>
-      </ul>
-      <ul class="nav-item">
-        <a class="nav-link" href="page2.html">page2</a>
-      </ul>
-    </nav>
+<style>
+  .navbar {
+    padding: 15px 0;
+  }
 
-    <div id="natureCarousel" class="carousel slide mx-auto container my-4 flex-grow-1" style="max-width:1280px; width:100%;">
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+  }
 
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#natureCarousel" data-bs-slide-to="3"></button>
-  </div>
+  .navbar .nav-link {
+    margin-left: 10px;
+    padding: 8px 12px !important;
+    border-radius: 5px;
+  }
 
-  <div class="carousel-inner rounded overflow-hidden">
+  .navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 
-    <div class="carousel-item active">
-      <img src="obrázky/pic01.jpg" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Hory">
+
+  .navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <i class="fa-solid fa-code me-2"></i>
+        Divadla Olomouc
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fa-solid fa-house me-1"></i>
+              Domovská stránka
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">
+              <i class="fa-solid fa-envelope me-1"></i>
+              Kontakt
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="karty.html">
+              <i class="fa-solid fa-layer-group me-1"></i>
+              program
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html">
+              <i class="fa-solid fa-file me-1"></i>
+              informace o projektu
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container py-5">
+
+    <div class="text-center mb-5">
+      <h1>Informace o projektu</h1>
+      <p class="text-muted">
+        Přehled projektu a použitých technologií
+      </p>
     </div>
 
-    <div class="carousel-item">
-      <img src="obrázky/pic2.jpg" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Jezero">
-    </div>
+    <div class="card mb-5">
+      <div class="card-body">
 
-    <div class="carousel-item">
-      <img src="obrázky/pic3.jpg" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Les">
-    </div>
+        <h2>Pokrok projektu</h2>
 
-    <div class="carousel-item">
-      <img src="obrázky/pic4.webp" class="d-block w-100" style="height:420px; object-fit:cover;" alt="Vodopád">
-    </div>
+        <p class="mt-3 mb-2">
+          2. září
+        </p>
 
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#natureCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#natureCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-</div>
-<p>
-  <div class="container">
-        <div class="progress">
-            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
-                aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                    60% Complete
-            </div>
+        <div class="progress mb-3">
+          <div class="progress-bar" style="width: 30%;">
+            30 %
+          </div>
         </div>
+
+
+        <p class="mb-2">
+          9. září
+        </p>
+
+        <div class="progress mb-3">
+          <div class="progress-bar" style="width: 45%;">
+            45 %
+          </div>
+        </div>
+
+
+        <p class="mb-2">
+          14. září
+        </p>
+
+        <div class="progress mb-3">
+          <div class="progress-bar" style="width: 60%;">
+            60%
+          </div>
+        </div>
+
+
+        <p class="mb-2">
+          16. září
+        </p>
+
+        <div class="progress">
+          <div class="progress-bar" style="width: 100%;">
+            100%
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  
+    <div class="card mt-5">
+      <div class="card-body text-center">
+        <p>
+          Tento projekt slouží k navigaci mezi divadly v Olomouci
+        </p>
+
+        <a href="index.html" class="btn btn-primary">
+          Zpět na hlavní stránku
+        </a>
+
+      </div>
+    </div>
   </div>
-</p>
+  <footer class="bg-dark text-light text-center p-3 mt-5">
+    <a href="dokumentace_projektu.docx" class="text-light">Dokumentace</a> | © 2026 Divadla Olomouc
+  </footer>
 
 </body>
-</html>
 
 </html>

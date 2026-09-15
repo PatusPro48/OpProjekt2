@@ -10,33 +10,80 @@
     <link rel="stylesheet" href="node_modules/bootswatch/dist/pulse/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-      .nav-link {
-        color: white;
-      }
+        .navbar {
+            padding: 15px 0;
+        }
 
-      .nav-link:hover {
-            background-color: white;
-            color: primary;
-            border-radius: 10px;
-            padding: 10px;
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navbar .nav-link {
+            margin-left: 10px;
+            padding: 8px 12px !important;
+            border-radius: 5px;
+        }
+
+        .navbar .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .navbar .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-primary">
-        <ul class="nav-item">
-            <a class="nav-link" href="index.html">domovská stránka</a>
-        </ul>
-        <ul class="nav-item">
-            <a class="nav-link" href="kontakt.html">kontakt</a>
-        </ul>
-        <ul class="nav-item">
-            <a class="nav-link" href="karty.html">karty</a>
-        </ul>
-        <ul class="nav-item">
-            <a class="nav-link" href="page2.html">page2</a>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-code me-2"></i>
+                Divadla Olomouc
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa-solid fa-house me-1"></i>
+                            Domovská stránka
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">
+                            <i class="fa-solid fa-envelope me-1"></i>
+                            Kontakt
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="karty.html">
+                            <i class="fa-solid fa-layer-group me-1"></i>
+                            program
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">
+                            <i class="fa-solid fa-file me-1"></i>
+                            informace o projektu
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
     </nav>
     <div class="container">
         <div class="row justify-content-center">
@@ -46,33 +93,25 @@
 
                 <form>
                     <div class="mb-10">
-                        <label for="email" class="form-label">E-mail</label>
+                        <label for="email" class="form-label">E-mail</label required>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <p>
                     <div class="form-floating">
-                        <select class="form-select" id="kra" name="kraj" required>
+                        <select class="form-select" id="kra" name="divadlo" required>
                             <option value="" selected disabled>vybrat</option>
-                            <option value="Zk">Zlínský kraj</option>
-                            <option value="MSK">Moravskoslezský kraj</option>
-                            <option value="JMK">Jihomoravský kraj</option>
-                            <option value="KV">kraj Vysočina</option>
-                            <option value="OK">Olomoucký kraj</option>
-                            <option value="PK">Pardubický kraj</option>
-                            <option value="KHK">Královéhradecký kraj</option>
-                            <option value="JCK">Jihočeský kraj</option>
-                            <option value="PK">Plzeňský kraj</option>
-                            <option value="LK">Liberecký kraj</option>
-                            <option value="UK">Ústecký kraj</option>
-                            <option value="KK">Karlovarský kraj</option>
-                            <option value="SK">Středočeský kraj</option>
-                            <option value="HMP">Hlavní město Praha</option>
+                            <option value="MDO">moravské divadlo Olomouc</option>
+                            <option value="DC">Divadlo na cucky</option>
+                            <option value="DT">Divadlo Tramtarie</option>
+                            <option value="DK">divadlo K3</option>
+                            <option value="nn">netýká se konkrétního divadla</option>
+
                         </select>
-                        <label for="kraj" class="form-label">Vyberte Kraj</label>
+                        <label for="kraj" class="form-label">Vyberte divadlo</label>
                     </div>
                     </p>
                     <div class="mb-10">
-                        <label for="message" class="form-label">Zpráva</label>
+                        <label for="message" class="form-label">Zpráva</label required>
                         <textarea class="form-control" id="message" name="message" rows="8"></textarea>
                     </div>
 
